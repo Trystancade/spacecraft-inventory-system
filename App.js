@@ -17,7 +17,7 @@ function App ()
 		<div>
 			<h1>Inventory</h1>
 			<ol>
-				<!-- TODO: Render each inventory item as a list item. -->
+				{inventoryItems.map(item => <li key={item.name}><InventoryItem name={item.name} type = {item.type} quantity = {item.quantity} price = {item.price} /></li>)}
 			</ol>
 		</div>
 	);
