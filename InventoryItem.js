@@ -9,8 +9,8 @@ function InventoryItem ({name, type, quantity=0, price=0}) //set default values 
 				<Message>Inventory Count: {quantity} </Message>
 			}
 			{(quantity * price) >= 1000 ?
-				<Message>BE CAREFUL! This inventory is very valuable and is worth <b>{quantity * price}</b>.</Message> :
-				<Message>Total Value: {quantity * price} </Message>
+				<Message>BE CAREFUL! This inventory is very valuable and is worth <b>${quantity * price}</b>.</Message> :
+				<Message>Total Value: ${quantity * price} </Message>
 			}
 		</div>
 	);
